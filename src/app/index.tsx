@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import GroupChat from '../components/GroupChat';
 import Header from '../components/Header';
 import RecentChats from '../components/RecentChats';
 
@@ -11,6 +12,7 @@ export default function ChatsScreen() {
       <ScrollView showsVerticalScrollIndicator={false}>
         <Header />
         <RecentChats />
+        <GroupChat />
       </ScrollView>
       <StatusBar style="dark" />
     </SafeAreaView>
