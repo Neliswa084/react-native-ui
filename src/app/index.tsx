@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { ScrollView, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Header from '../components/Header';
+import RecentChats from '../components/RecentChats';
 
 
 export default function ChatsScreen() {
@@ -9,7 +10,7 @@ export default function ChatsScreen() {
     <SafeAreaView style={styles.screen}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <Header />
-  
+        <RecentChats />
       </ScrollView>
       <StatusBar style="dark" />
     </SafeAreaView>
