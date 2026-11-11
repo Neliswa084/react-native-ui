@@ -1,17 +1,25 @@
-import { Text, View, StyleSheet } from "react-native";
+import { StatusBar } from 'expo-status-bar';
+import { ScrollView, StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import Header from '../components/Header';
 
-export default function Index() {
+
+export default function ChatsScreen() {
   return (
-    <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
-    </View>
+    <SafeAreaView style={styles.screen}>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <Header />
+  
+      </ScrollView>
+      <StatusBar style="dark" />
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  screen: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#F4F6F3',
+    padding: 10,
   },
 });
